@@ -2,7 +2,19 @@
   "name": "web",
   "version": "0.1.0",
   "private": true,
+  "babelMacros": {
+    "twin": {
+      "config": "src/tailwind.config.js",
+      "preset": "emotion",
+      "debugProp": true,
+      "debugPlugins": false,
+      "debug": false
+    }
+  },
   "dependencies": {
+    "@emotion/babel-preset-css-prop": "^10.0.27",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -10,16 +22,28 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@urql/devtools": "^2.0.2",
+    "autoprefixer": "^9.8.5",
+    "formik": "^2.1.5",
+    "graphql": "^15.3.0",
+    "history": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "typescript": "~3.7.2"
+    "tailwindcss": "^1.5.2",
+    "twin.macro": "^1.6.0",
+    "typescript": "~3.7.2",
+    "urql": "^1.9.8"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "gen": "graphql-codegen --config codegen.yml",
+    "prestart": "yarn gen",
+    "predev": "yarn gen"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +59,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.17.3",
+    "@graphql-codegen/typescript-operations": "^1.17.3",
+    "@graphql-codegen/typescript-urql": "^1.17.3",
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "@types/react-router-dom": "^5.1.5",
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.1.6",
+    "tailwindcss-spinner": "^1.2.0",
+    "typescript-plugin-tw-template": "^2.0.1"
   }
 }
