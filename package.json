@@ -34,7 +34,8 @@
     "tailwindcss": "^1.5.2",
     "twin.macro": "^1.6.0",
     "typescript": "~3.7.2",
-    "urql": "^1.9.8"
+    "urql": "^1.9.8",
+    "yup": "^0.29.1"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -66,7 +67,9 @@
     "@graphql-codegen/typescript-urql": "^1.17.3",
     "@tailwindcss/custom-forms": "^0.2.1",
     "@types/react-router-dom": "^5.1.5",
+    "@types/yup": "^0.29.3",
     "customize-cra": "^1.0.0",
+    "install": "^0.13.0",
     "react-app-rewired": "^2.1.6",
     "tailwindcss-spinner": "^1.2.0",
     "typescript-plugin-tw-template": "^2.0.1"

@@ -1,5 +1,6 @@
 import React from "react";
 import { Field, ErrorMessage } from "formik";
+import "twin.macro";
 
 type PropTypes = {
   id: string;
@@ -15,7 +16,7 @@ export const CustomInput = (props: PropTypes) => {
         {props.label}
       </label>
       <Field
-        className="form-input"
+        tw="form-input"
         id={props.id}
         name={props.id}
         placeholder={props.placeholder}
