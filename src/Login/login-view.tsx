@@ -1,6 +1,6 @@
 import React from "react";
 import "twin.macro";
-import { LoginForm } from "Forms/login";
+import { LoginForm } from "Login/login-form";
 
 export const Login = () => {
   return (

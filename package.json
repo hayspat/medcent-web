@@ -7,7 +7,7 @@
       "config": "src/tailwind.config.js",
       "preset": "emotion",
       "debugProp": true,
-      "debugPlugins": true,
+      "debugPlugins": false,
       "debug": false
     }
   },
@@ -23,14 +23,18 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@urql/devtools": "^2.0.2",
+    "@urql/exchange-graphcache": "^3.0.1",
     "autoprefixer": "^9.8.5",
     "formik": "^2.1.5",
     "graphql": "^15.3.0",
+    "graphql-tag": "^2.10.4",
     "history": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-spring": "^8.0.27",
+    "react-text-mask": "^5.4.3",
     "tailwindcss": "1.4.6",
     "twin.macro": "^1.6.0",
     "typescript": "~3.7.2",
@@ -65,11 +69,11 @@
     "@graphql-codegen/typescript-urql": "^1.17.3",
     "@tailwindcss/custom-forms": "^0.2.1",
     "@types/react-router-dom": "^5.1.5",
+    "@types/react-text-mask": "^5.4.6",
     "@types/yup": "^0.29.3",
     "customize-cra": "^1.0.0",
     "install": "^0.13.0",
     "react-app-rewired": "^2.1.6",
-    "tailwindcss-spinner": "^1.2.0",
-    "typescript-plugin-tw-template": "^2.0.1"
+    "tailwindcss-spinner": "^1.2.0"
   }
 }

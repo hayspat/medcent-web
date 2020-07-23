@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "App";
 import * as serviceWorker from "serviceWorker";
 import { client } from "Util/graphql.client";
 import { Provider } from "urql";
 import "tailwind.css";
+import { App } from "app";
 
 ReactDOM.render(
   <React.StrictMode>
