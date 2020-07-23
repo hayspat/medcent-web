@@ -42,9 +42,7 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
-    "gen": "graphql-codegen --config codegen.yml",
-    "prestart": "yarn gen",
-    "predev": "yarn gen"
+    "gen": "graphql-codegen --config codegen.yml"
   },
   "eslintConfig": {
     "extends": "react-app"
