@@ -7,7 +7,7 @@
       "config": "src/tailwind.config.js",
       "preset": "emotion",
       "debugProp": true,
-      "debugPlugins": false,
+      "debugPlugins": true,
       "debug": false
     }
   },
@@ -31,7 +31,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "tailwindcss": "^1.5.2",
+    "tailwindcss": "1.4.6",
     "twin.macro": "^1.6.0",
     "typescript": "~3.7.2",
     "urql": "^1.9.8",
